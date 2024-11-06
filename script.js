@@ -1,5 +1,5 @@
 const countdown = () => {
-    const weddingDate = new Date("Nov 15, 2024 10:00:00").getTime();
+    const weddingDate = new Date("May 25, 2025 11:00:00").getTime();
     const now = new Date().getTime();
     const timeDiff = weddingDate - now;
 
