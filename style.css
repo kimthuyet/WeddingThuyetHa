@@ -33,3 +33,18 @@ header, .story, .gallery, .countdown, .rsvp {
     font-size: 24px;
     font-weight: bold;
 }
+.directions-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.directions-button:hover {
+    background-color: #0056b3;
+}
