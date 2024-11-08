@@ -8,50 +8,47 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Happy Wedding</h1>
+        <!-- Header với hình nền và tiêu đề Happy Wedding -->
+        <header class="header">
+            <h1 class="header-title">Happy Wedding</h1>
         </header>
+
         <section class="story">
             <h2>Câu chuyện của chúng tôi</h2>
             <p>Một câu chuyện tình yêu đầy ý nghĩa và cảm động...</p>
         </section>
-       <section class="location">
-    <h2>Địa điểm tổ chức</h2>
-    <p>Khách sạn Đà Lạt Palace</p>
-    <!-- Mã nhúng Google Maps với tọa độ bạn cung cấp -->
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d295.27877683974464!2d108.37560707891924!3d15.774320177636683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1svi!2s!4v1731035252664!5m2!1svi!2s" 
-        width="100%" 
-        height="400" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy">
-    </iframe>
-    <br>
-    <!-- Nút chỉ đường -->
-    <a href="https://www.google.com/maps/dir/?api=1&destination=15.774320177636683,108.37560707891924" target="_blank">
-        <button class="directions-button">Chỉ đường</button>
-    </a>
-</section>
+
+        <section class="location">
+            <h2>Địa điểm tổ chức</h2>
+            <p>Khách sạn Đà Lạt Palace</p>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d295.27877683974464!2d108.37560707891924!3d15.774320177636683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1svi!2s!4v1731035252664!5m2!1svi!2s" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+            <br>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=15.774320177636683,108.37560707891924" target="_blank">
+                <button class="directions-button">Chỉ đường</button>
+            </a>
+        </section>
 
         <section class="gallery">
             <h2>Thư viện ảnh</h2>
-            <img src="photo1.jpg" alt="Ảnh cưới 1">
-            <img src="photo2.jpg" alt="Ảnh cưới 2">
-            <img src="photo3.jpg" alt="Ảnh cưới 3">
-            <img src="photo4.jpg" alt="Ảnh cưới 4">
-            <img src="photo5.jpg" alt="Ảnh cưới 5">
-            <img src="photo6.jpg" alt="Ảnh cưới 6">
-            <img src="photo7.jpg" alt="Ảnh cưới 7">
-            <img src="photo8.jpg" alt="Ảnh cưới 8">
-            <img src="photo9.jpg" alt="Ảnh cưới 9">
-            <img src="photo10.jpg" alt="Ảnh cưới 10">
-            <img src="photo11.jpg" alt="Ảnh cưới 11">
+            <img src="images/photo1.jpg" alt="Ảnh cưới 1">
+            <img src="images/photo2.jpg" alt="Ảnh cưới 2">
+            <img src="images/photo3.jpg" alt="Ảnh cưới 3">
+            <img src="images/photo4.jpg" alt="Ảnh cưới 4">
+            <img src="images/photo5.jpg" alt="Ảnh cưới 5">
         </section>
+
         <section class="countdown">
             <h2>Đếm ngược đến ngày cưới</h2>
-            <div id="timer"></div>
+            <div id="timer">0 ngày 0 giờ 0 phút 0 giây</div>
         </section>
+
         <section class="rsvp">
             <h2>Tham dự</h2>
             <form>
