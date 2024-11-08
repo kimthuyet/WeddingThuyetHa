@@ -21,7 +21,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Header với hình nền và tiêu đề có hiệu ứng */
+/* Header với hình nền và hiệu ứng sóng */
 .header {
     background-image: url('images/backround.jpg');
     background-size: cover;
@@ -33,25 +33,18 @@ body {
     overflow: hidden;
 }
 
-@keyframes blink-move {
-    0% {
-        opacity: 1;
-        transform: translateX(-100%);
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(100%);
-    }
+@keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(10px); }
+    75% { transform: translateY(-10px); }
 }
 
 .header-title {
     color: #FF69B4;
     font-size: 3em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    animation: blink-move 3s infinite linear;
+    animation: wave 2s infinite ease-in-out;
 }
 
 /* Câu chuyện, địa điểm, và các phần khác */
