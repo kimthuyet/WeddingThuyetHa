@@ -21,9 +21,9 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Header với hình nền và tiêu đề */
+/* Header với hình nền và tiêu đề có hiệu ứng nhấp nháy */
 .header {
-    background-image: url('images/backround.jpg');
+    background-image: url('images/background.jpg');
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -32,10 +32,17 @@ body {
     align-items: center;
 }
 
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 .header-title {
     color: #fff;
     font-size: 3em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: blink 1.5s infinite;
 }
 
 /* Câu chuyện */
@@ -72,6 +79,7 @@ body {
     width: 100%;
     max-width: 300px;
     margin: 10px;
+    border-radius: 10px;
 }
 
 /* Đếm ngược */
