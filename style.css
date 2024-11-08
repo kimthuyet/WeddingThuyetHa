@@ -22,7 +22,22 @@ body {
 header, .story, .gallery, .countdown, .rsvp {
     margin-bottom: 20px;
 }
+/* CSS cho phần header với hình nền */
+.header {
+    text-align: center;
+}
 
+.header-title {
+    background-image: url('path/to/your/image.jpg'); /* Đường dẫn đến hình nền */
+    background-size: cover; /* Phủ toàn bộ nội dung của h1 */
+    background-position: center; /* Căn giữa hình nền */
+    color: #fff; /* Màu chữ */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tạo bóng cho chữ */
+    display: inline-block;
+    padding: 50px 100px; /* Tăng kích thước phần chứa văn bản */
+    font-size: 3em; /* Kích thước chữ */
+    border-radius: 8px; /* Bo tròn góc, tùy chọn */
+}
 .gallery img {
     width: 100%;
     max-width: 300px;
