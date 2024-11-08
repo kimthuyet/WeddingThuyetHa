@@ -1,9 +1,11 @@
+/* Reset CSS */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Cài đặt cơ bản */
 body {
     font-family: Arial, sans-serif;
     background: #FFC0CB;
@@ -19,36 +21,34 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-header, .story, .gallery, .countdown, .rsvp {
-    margin-bottom: 20px;
-}
-
-/* CSS cho phần header với hình nền */
+/* Header với hình nền và tiêu đề */
 .header {
-    text-align: center;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-title {
-    background-image: url("photo1.jpg"); /* Đường dẫn đến hình nền */
-    background-size: cover; /* Phủ toàn bộ nội dung của h1 */
-    background-position: center; /* Căn giữa hình nền */
-    color: #C71585; /* Màu chữ */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tạo bóng cho chữ */
-    display: inline-block;
-    padding: 50px 100px; /* Tăng kích thước phần chứa văn bản */
-    font-size: 3em; /* Kích thước chữ */
-    border-radius: 8px; /* Bo tròn góc, tùy chọn */
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.gallery img {
+/* Câu chuyện */
+.story, .location, .gallery, .countdown, .rsvp {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Địa điểm */
+.location iframe {
     width: 100%;
-    max-width: 300px;
-    margin: 10px;
-}
-
-.countdown {
-    font-size: 24px;
-    font-weight: bold;
+    height: 400px;
+    border: none;
 }
 
 .directions-button {
@@ -65,4 +65,40 @@ header, .story, .gallery, .countdown, .rsvp {
 
 .directions-button:hover {
     background-color: #0056b3;
+}
+
+/* Thư viện ảnh */
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+/* Đếm ngược */
+.countdown {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* RSVP */
+.rsvp input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+    font-size: 16px;
+}
+
+.rsvp button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rsvp button:hover {
+    background-color: #218838;
 }
