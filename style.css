@@ -28,7 +28,7 @@ header, .story, .gallery, .countdown, .rsvp {
 }
 
 .header-title {
-    background-image: url('path/to/your/image.jpg'); /* Đường dẫn đến hình nền */
+    background-image: url('images/background.jpg'); /* Đường dẫn đến hình nền */
     background-size: cover; /* Phủ toàn bộ nội dung của h1 */
     background-position: center; /* Căn giữa hình nền */
     color: #fff; /* Màu chữ */
