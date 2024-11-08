@@ -8,16 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <!-- Header với hình nền và tiêu đề Happy Wedding -->
+        <!-- Header với tiêu đề "Happy Wedding" có hiệu ứng nhấp nhô -->
         <header class="header">
-            <h1 class="header-title">Happy Wedding</h1>
+            <h1 class="header-title">
+                <span>H</span><span>a</span><span>p</span><span>p</span><span>y</span> 
+                <span>W</span><span>e</span><span>d</span><span>d</span><span>i</span><span>n</span><span>g</span>
+            </h1>
         </header>
-
+        
+        <!-- Câu chuyện của chúng tôi -->
         <section class="story">
             <h2>Câu chuyện của chúng tôi</h2>
             <p>Một câu chuyện tình yêu đầy ý nghĩa và cảm động...</p>
         </section>
 
+        <!-- Địa điểm tổ chức với bản đồ Google và nút chỉ đường -->
         <section class="location">
             <h2>Địa điểm tổ chức</h2>
             <p>Khách sạn Đà Lạt Palace</p>
@@ -35,6 +40,7 @@
             </a>
         </section>
 
+        <!-- Thư viện ảnh -->
         <section class="gallery">
             <h2>Thư viện ảnh</h2>
             <img src="images/photo1.jpg" alt="Ảnh cưới 1">
@@ -42,21 +48,17 @@
             <img src="images/photo3.jpg" alt="Ảnh cưới 3">
             <img src="images/photo4.jpg" alt="Ảnh cưới 4">
             <img src="images/photo5.jpg" alt="Ảnh cưới 5">
+            <img src="images/photo6.jpg" alt="Ảnh cưới 6">
         </section>
 
+        <!-- Đếm ngược đến ngày cưới -->
         <section class="countdown">
             <h2>Đếm ngược đến ngày cưới</h2>
-            <div id="timer">0 ngày 0 giờ 0 phút 0 giây</div>
-        </section>
-
-        <section class="rsvp">
-            <h2>Tham dự</h2>
-            <form>
-                <input type="text" placeholder="Tên của bạn">
-                <button type="submit">Xác nhận tham dự</button>
-            </form>
+            <div id="timer"></div>
         </section>
     </div>
+
+    <!-- JavaScript cho phần đếm ngược -->
     <script src="script.js"></script>
 </body>
 </html>
