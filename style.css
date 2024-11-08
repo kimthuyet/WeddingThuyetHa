@@ -22,13 +22,14 @@ body {
 header, .story, .gallery, .countdown, .rsvp {
     margin-bottom: 20px;
 }
+
 /* CSS cho phần header với hình nền */
 .header {
     text-align: center;
 }
 
 .header-title {
-    background-image: url('background.jpg'); /* Đường dẫn đến hình nền */
+    background-image: url('images/backround.jpg'); /* Đường dẫn đến hình nền */
     background-size: cover; /* Phủ toàn bộ nội dung của h1 */
     background-position: center; /* Căn giữa hình nền */
     color: #fff; /* Màu chữ */
@@ -38,6 +39,7 @@ header, .story, .gallery, .countdown, .rsvp {
     font-size: 3em; /* Kích thước chữ */
     border-radius: 8px; /* Bo tròn góc, tùy chọn */
 }
+
 .gallery img {
     width: 100%;
     max-width: 300px;
@@ -48,6 +50,7 @@ header, .story, .gallery, .countdown, .rsvp {
     font-size: 24px;
     font-weight: bold;
 }
+
 .directions-button {
     padding: 10px 20px;
     font-size: 16px;
