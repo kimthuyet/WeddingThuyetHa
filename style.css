@@ -32,7 +32,7 @@ header, .story, .gallery, .countdown, .rsvp {
     background-image: url("backround.jpg"); /* Đường dẫn đến hình nền */
     background-size: cover; /* Phủ toàn bộ nội dung của h1 */
     background-position: center; /* Căn giữa hình nền */
-    color: #fff; /* Màu chữ */
+    color: #C71585; /* Màu chữ */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Tạo bóng cho chữ */
     display: inline-block;
     padding: 50px 100px; /* Tăng kích thước phần chứa văn bản */
