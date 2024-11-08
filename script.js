@@ -1,20 +1,25 @@
-const countdown = () => {
-    const weddingDate = new Date("May 25, 2025 11:00:00").getTime();
-    const now = new Date().getTime();
-    const timeDiff = weddingDate - now;
+// Cài đặt thời gian đếm ngược đến ngày cưới
+const weddingDate = new Date("Dec 31, 2024 00:00:00").getTime();
 
-    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+const countdown = setInterval(function() {
+    let now = new Date().getTime();
+    let timeLeft = weddingDate - now;
 
-    document.getElementById("timer").innerHTML =
-        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-    if (timeDiff < 0) {
-        clearInterval(countdownInterval);
-        document.getElementById("timer").innerHTML = "Đã đến ngày cưới!";
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    if (timeLeft < 0) {
+        clearInterval(countdown);
+        document.getElementById("days").innerHTML = "0";
+        document.getElementById("hours").innerHTML = "0";
+        document.getElementById("minutes").innerHTML = "0";
+        document.getElementById("seconds").innerHTML = "0";
     }
-};
-
-const countdownInterval = setInterval(countdown, 1000);
+}, 1000);
