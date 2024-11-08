@@ -23,7 +23,7 @@ body {
 
 /* Header với hình nền và tiêu đề có hiệu ứng */
 .header {
-    background-image: url('images/background.jpg');
+    background-image: url('images/backround.jpg');
     background-size: cover;
     background-position: center;
     height: 300px;
